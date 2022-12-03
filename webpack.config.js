@@ -108,7 +108,10 @@ class WebpackBundle {
         bundle.resolve = {
             modules: ["node_modules", path.resolve(__dirname, "cartridges")],
             alias: {
-                base: path.resolve(__dirname, "cartridges/app_storefront_base/cartridge/client/default/scss")
+                base: path.resolve(__dirname, "cartridges/app_storefront_base/cartridge/client/default/scss"),
+                custom: path.resolve(__dirname, "cartridges/app_storefront_custom/cartridge/client/default/scss"),
+                basejs: path.resolve(__dirname, "cartridges/app_storefront_base/cartridge/client/default/js")
+
             }
         };
 
