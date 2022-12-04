@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<users xmlns="http://www.demandware.com/xml/impex/user/2007-09-05">
+    <user login="rodrigoadamski@gmail.com" enabled-flag="true">
+        <credentials>
+            <external-id>7a037c38-c813-4100-a5d7-fdcc74556270</external-id>
+        </credentials>
+        <profile>
+            <first-name>Rodrigo</first-name>
+            <last-name>Adamski</last-name>
+            <email>rodrigoadamski@gmail.com</email>
+        </profile>
+    </user>
+
+</users>

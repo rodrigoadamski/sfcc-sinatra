@@ -11,8 +11,6 @@
     <div class="home-main homepage">
         <isslot id="home-main-m" description="Main home page slot." context="global" />
     </div>
-<p class="teste">Teste inline</p>
-<p class="teste2">Teste main</p>
 
     <div class="container home-categories homepage">
         <div class="row home-main-categories no-gutters">
