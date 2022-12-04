@@ -1,3 +1,4 @@
+<isinclude template="/components/modules" sf-toolkit="off" />
 <isdecorate template="common/layout/page">
     <isscript>
         var assets = require('*/cartridge/scripts/assets.js');
@@ -6,14 +7,20 @@
         assets.addCss('/css/homePage.css');
         assets.addCss('/css/teste.css');
     </isscript>
+    <!-- EX03-Content Asset-->
+        <iscontentasset aid="ex03_image_to_homepage"/>
 
-    <!-- +1.888.555.0199 --><!--This phone is a requirement to support existing Gomez monitor of SiteGenesis. Demadware customers can remove this.-->
+    <!-- +1.888.555.0199 -->
+    <!--This phone is a requirement to support existing Gomez monitor of SiteGenesis. Demadware customers can remove this.-->
     <div class="home-main homepage">
         <isslot id="home-main-m" description="Main home page slot." context="global" />
     </div>
+<<<<<<< Updated upstream
 <p class="teste">Teste inline</p>
 <p class="teste2">Teste main</p>
 
+=======
+>>>>>>> Stashed changes
     <div class="container home-categories homepage">
         <div class="row home-main-categories no-gutters">
             <isslot id="home-categories-m" description="Categories slots on the home page." context="global" />
@@ -22,7 +29,6 @@
 
     <div class="container home-product-tiles homepage">
         <div class="hp-product-grid" itemtype="http://schema.org/SomeProducts" itemid="#product">
-            <isslot id="home-products-m" description="Product tiles on the home page." context="global" />
         </div>
     </div>
 
