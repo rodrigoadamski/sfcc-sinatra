@@ -1,28 +1,17 @@
+<isinclude template="/components/modules" sf-toolkit="off" />
 <isdecorate template="common/layout/page">
     <isscript>
         var assets = require('*/cartridge/scripts/assets.js');
         assets.addJs('/js/productTile.js');
         assets.addJs('/js/teste.js');
         assets.addCss('/css/homePage.css');
-        assets.addCss('/css/teste.css');
     </isscript>
-<<<<<<< Updated upstream
+        <iscontentasset aid="ex03_image_to_homepage"/>
 
     <!-- +1.888.555.0199 --><!--This phone is a requirement to support existing Gomez monitor of SiteGenesis. Demadware customers can remove this.-->
     <div class="home-main homepage">
         <isslot id="home-main-m" description="Main home page slot." context="global" />
     </div>
-<p class="teste">Teste inline</p>
-<p class="teste2">Teste main</p>
-=======
-    <!-- EX03-Content Asset-->
-        <iscontentasset aid="ex03_image_to_homepage"/>
-    <!-- +1.888.555.0199 -->
-    <!--This phone is a requirement to support existing Gomez monitor of SiteGenesis. Demadware customers can remove this.-->
-    <div class="home-main homepage">
-        <isslot id="home-main-m" description="Main home page slot." context="global" />
-    </div>
->>>>>>> Stashed changes
 
     <div class="container home-categories homepage">
         <div class="row home-main-categories no-gutters">
