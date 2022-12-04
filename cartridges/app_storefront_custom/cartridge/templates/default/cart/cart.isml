@@ -69,10 +69,29 @@
                 </div>
                 <!---totals, and checkout actions--->
                 <div class="col-sm-5 col-md-4 totals">
+<<<<<<< Updated upstream
                     <isinclude template="cart/cartPromoCode" />
+=======
+<!---
+                    <div class="tab">
+                     <input type="radio" id="rd1" name="rd" class="tt">
+                        <label class="tab-label" for="rd1">Click here if you have a coupon code </label>
+                        <div class="tab-content">
+                                <isinclude template="cart/cartPromoCode" />
+                        </div>
+                    </div>
+--->
+
+                <a href="#" class="btn-show-code">Click here if you have a coupon code</a>
+                    <div id="cart-show-promo">
+                        <isinclude template="cart/cartPromoCode" />
+                    </div>
+
+>>>>>>> Stashed changes
                     <div class="coupons-and-promos">
                         <isinclude template="cart/cartCouponDisplay" />
                     </div>
+
                     <div class="row">
                         <isinclude template="cart/cartShippingMethodSelection" />
                     </div>
@@ -84,7 +103,6 @@
                     </div>
                 </div>
             </div>
-            
             <isinclude template="cart/cartRemoveProductModal"/>
         </div>
 
