@@ -1,0 +1,67 @@
+<isinclude template="/components/modules" sf-toolkit="off" />
+<isscript>
+        var assets = require('*/cartridge/scripts/assets.js');
+        assets.addCss('/css/styling.css');
+    </isscript>
+
+
+<footer id="footercontent" class="footer-full">
+    <div class="container">
+        <div class="footer-title">
+                <h2>Footer Your Benefits Section</h2>
+                <h3>Where does it come from?</h3>
+             </div>
+        <div class="footer-benefits row">
+            <div class="footer-item col-sm-3">
+                <iscontentasset aid="ex05-full-content" />
+            </div>
+            <div class="footer-item col-sm-3">
+                <iscontentasset aid="ex05-full-content" />
+            </div>
+            <div class="footer-item col-sm-3">
+                <iscontentasset aid="ex05-full-content" />
+            </div>
+            <div class="footer-item col-sm-3">
+                <iscontentasset aid="ex05-full-content" />
+            </div>
+       </div>
+       <div class="footer-brands row">
+            <div class="footer-item col-sm-4">
+                <iscontentasset aid="ex10-brand01" />
+            </div>
+            <div class="footer-item col-sm-4">
+                <iscontentasset aid="ex10-brand02" />
+            </div>
+            <div class="footer-item col-sm-4">
+                <iscontentasset aid="ex10-brand03" />
+            </div>
+       </div>
+          <div class="footer-container footer-menu row">
+            <div class="footer-item col-sm-4">
+                <h3>CUSTOMER SERVICE</h3>
+                <div class="menu-left-footer">
+                <iscontentasset aid="footer-about" />
+                <iscontentasset aid="footer-account" />
+                </div>
+            </div>
+            <div class="footer-item col-sm-4">
+                <iscontentasset aid="id10-hotline" />
+            </div>
+            <div class="footer-item col-sm-4">
+                <iscontentasset aid="id10-service-help" />
+            </div>
+        </div>
+        <div class="footer-brands footer-menu row">
+            <div class="footer-item col-sm-12">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ornare vulputate est non tincidunt. Sed ullamcorper, nisi et pulvinar placerat, sapien justo commodo tellus, non viverra purus erat nec urna. Nullam euismod magna vel viverra condimentum. Duis et justo faucibus, egestas leo eu, facilisis purus. Cras lacus ante, varius in mattis rutrum, pellentesque vitae ipsum. Cras luctus lacus quis laoreet tempus. Nulla in ipsum eu ligula elementum dapibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 copyright-notice">
+                <iscontentasset aid="footer-copy" />
+            </div>
+        </div>
+    </div>
+</footer>
