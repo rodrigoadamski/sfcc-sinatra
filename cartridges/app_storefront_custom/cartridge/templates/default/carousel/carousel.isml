@@ -1,0 +1,54 @@
+<isdecorate template="common/layout/page">
+    <isscript>
+        var assets = require('*/cartridge/scripts/assets.js');
+        assets.addJs('/js/carousel.js');
+        assets.addCss('/css/carousel.css');
+    </isscript>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <section class="slider-nav slider">
+                    <div>
+                        <img src="https://m.media-amazon.com/images/I/611bclPcCKL._AC_UY218_.jpg">
+                    </div>
+                    <div>
+                        <img src="https://m.media-amazon.com/images/I/41STgJIZUXL._AC_UY218_.jpg">
+                    </div>
+                    <div>
+                        <img src="https://m.media-amazon.com/images/I/91ZfeY6NOHL._AC_UY218_.jpg">
+                    </div>
+                    <div>
+                        <img src="https://m.media-amazon.com/images/I/51HUJHLTh8L._AC_UY218_.jpg">
+                    </div>
+                    <div>
+                        <img src="https://m.media-amazon.com/images/I/41yGgZFzUNL._AC_UY218_.jpg">
+                    </div>
+                    <div>
+                        <img src="https://m.media-amazon.com/images/I/51mkPMH7YYL._AC_UY218_.jpg">
+                    </div>
+                </section>
+            </div>
+            <div class="col-12">
+                <section class="regular slider">
+                    <div>
+                        <img src="https://m.media-amazon.com/images/I/611bclPcCKL._AC_UY218_.jpg">
+                    </div>
+                    <div>
+                        <img src="https://m.media-amazon.com/images/I/41STgJIZUXL._AC_UY218_.jpg">
+                    </div>
+                    <div>
+                        <img src="https://m.media-amazon.com/images/I/91ZfeY6NOHL._AC_UY218_.jpg">
+                    </div>
+                    <div>
+                        <img src="https://m.media-amazon.com/images/I/51HUJHLTh8L._AC_UY218_.jpg">
+                    </div>
+                    <div>
+                        <img src="https://m.media-amazon.com/images/I/41yGgZFzUNL._AC_UY218_.jpg">
+                    </div>
+                    <div>
+                        <img src="https://m.media-amazon.com/images/I/51mkPMH7YYL._AC_UY218_.jpg">
+                    </div>
+                </section>
+            </div>
+        </div>
+</isdecorate>
