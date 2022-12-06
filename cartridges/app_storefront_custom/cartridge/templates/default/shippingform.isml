@@ -1,0 +1,202 @@
+<isdecorate template="common/layout/page">
+    <isscript>
+        var assets = require('*/cartridge/scripts/assets.js');
+        assets.addJs('/js/contactUs.js');
+        assets.addCss('/css/contactUs.css');
+        assets.addCss('/css/form.css');
+    </isscript>
+
+ <div class="row justify-content-center form-block" id="top-back">
+            <div class="col-sm-8 col-md-8">
+    <h4 style="text-align:center;">Shipping</h4>
+    <form action="${pdict.actionUrl}" class="registration" method="POST" name="${pdict.profileForm.htmlName}">
+       
+
+        <!--- BLOCK NAME --->
+        <!--- first name --->
+        <div class="row shipping-name">
+            <div class="col-sm-6">
+                <div class="form-group required">
+                    <label class="form-control-label" for="shipping-first-name">
+                        <isprint value="${pdict.profileForm.customer.shippingfirstname.label}" encoding="htmlcontent" />
+                    </label>
+                    <input type="text" class="form-control required" id="shippingfirstname" name="shippingfirstname" />
+                </div>
+            </div>
+            <!--- last name --->
+            <div class="col-sm-6">
+                <div class="form-group required">
+                    <label class="form-control-label" for="shipping-last-name">
+                        <isprint value="${pdict.profileForm.customer.shippinglastname.label}" encoding="htmlcontent" />
+                    </label>
+                    <input type="text" required class="form-control required"
+                        aria-describedby="form-shipping-last-name-error" id="shippinglastname" name="shippingLastName">
+                    <div class="invalid-feedback" id="form-shipping-last-name-error"></div>
+                </div>
+            </div>
+        </div>
+        <!--- BLOCK ADDRESS --->
+        <!--- address 1 --->
+        <div class="row contact-us-address">
+            <div class="col-sm-12">
+                <div class="form-group required">
+                    <label class="form-control-label" for="shipping-address-line01">
+                        <isprint value="${pdict.profileForm.customer.addressll1.label}" encoding="htmlcontent" />
+                    </label>
+                    <input type="text" required class="form-control required"
+                        aria-describedby="form-shipping-addresLine01-error" id="addressll1" name="shippingaddresLine01">
+                    <div class="invalid-feedback" id="form-shipping-addresLine01-error"></div>
+                </div>
+            </div>
+            <div class="col-sm-12">
+                <div class="form-group required">
+                    <label class="form-control-label" for="shipping-addresLine02">
+                        <isprint value="${pdict.profileForm.customer.addressl2.label}" encoding="htmlcontent" />
+                    </label>
+                    <input type="text" required class="form-control required"
+                        aria-describedby="form-shipping-addresLine02-error" id="addressl2" name="addressl2">
+                    <div class="invalid-feedback" id="form-shipping-addresLine02-error"></div>
+                </div>
+            </div>
+            <!--- country --->
+
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label class="form-control-label" for="shipping-country">
+                        <isprint value="${pdict.profileForm.customer.country.label}" encoding="htmlcontent" />
+                    </label>
+                    <select type="text" required class="form-control required" id="country" name="shippingcountry">
+                        <option optionid="DFF" label="" value="DFF" />
+                        <option optionid="US" label="${Resource.msg('country.us', 'forms', null)}" value="US" />
+                    </select>
+                </div>
+            </div>
+            <!--- STATE --->
+
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label class="form-control-label" for="contact-state">
+                        <isprint value="${pdict.profileForm.customer.state.label}" encoding="htmlcontent" />
+                    </label>
+                    <select type="text" required class="form-control required" id="state" name="contactstate">
+                        <option optionid="DFF" label="" value="DFF" />
+                        <option optionid="AL" label="${Resource.msg('state.us.alaska', 'forms', null)}" value="AL" />
+                        <option optionid="AK" label="${Resource.msg('state.us.alaska', 'forms', null)}" value="AK" />
+                        <option optionid="AZ" label="${Resource.msg('state.us.arizona', 'forms', null)}" value="AZ" />
+                        <option optionid="AR" label="${Resource.msg('state.us.arkansas', 'forms', null)}" value="AR" />
+                        <option optionid="CA" label="${Resource.msg('state.us.california', 'forms', null)}"
+                            value="CA" />
+                        <option optionid="CO" label="${Resource.msg('state.us.colorado', 'forms', null)}" value="CO" />
+                        <option optionid="CT" label="${Resource.msg('state.us.connecticut', 'forms', null)}"
+                            value="CT" />
+                        <option optionid="DE" label="${Resource.msg('state.us.delaware', 'forms', null)}" value="DE" />
+                        <option optionid="DC" label="${Resource.msg('state.us.dc', 'forms', null)}" value="DC" />
+                        <option optionid="FL" label="${Resource.msg('state.us.florida', 'forms', null)}" value="FL" />
+                        <option optionid="GA" label="${Resource.msg('state.us.georgia', 'forms', null)}" value="GA" />
+                    </select>
+                </div>
+            </div>
+            <!--- ZIP --->
+            <div class="col-sm-6">
+                <div class="form-group required">
+                    <label class="form-control-label" for="contact-postal">
+                        <isprint value="${pdict.profileForm.customer.postal.label}" encoding="htmlcontent" />
+                    </label>
+                    <input type="text" required class="form-control required"
+                        aria-describedby="form-contact-postal-error" id="postal" name="postal">
+                    <div class="invalid-feedback" id="form-contact-postal-error"></div>
+                </div>
+            </div>
+            <!--- PHONE --->
+            <div class="col-sm-6">
+                <div class="form-group required">
+                    <label class="form-control-label" for="contact-phone">
+                        <isprint value="${pdict.profileForm.customer.phone.label}" encoding="htmlcontent" />
+                    </label>
+                    <input type="text" required class="form-control required"
+                        aria-describedby="form-contact-phone-error" id="phone" name="phone">
+                    <div class="invalid-feedback" id="form-contact-phone-error"></div>
+                </div>
+            </div>
+        </div>
+        <!--- contact us comment --->
+        <div class="row contact-us-comment">
+            <div class="col">
+                <div class="form-group">
+                    <label class="form-control-label" for="contact-comment">
+                        <isprint value="${pdict.profileForm.customer.comment.label}" encoding="htmlcontent" />
+                    </label>
+                    <textarea class="form-control" id="contact-comment" name="comment" rows="4"
+                        maxlength="250"></textarea>
+                </div>
+            </div>
+        </div>
+        <h4 style="text-align:center;">Payment</h4>
+        <!--- contact us card payment --->
+        <div class="row contact-us-payment">
+            <div class="col-sm-6">
+                <div class="form-group required">
+                    <label class="form-control-label" for="contact-cardnumber">
+                        <isprint value="${pdict.profileForm.customer.cardnumber.label}" encoding="htmlcontent" />
+                    </label>
+                    <input type="number" required class="form-control required"
+                        aria-describedby="form-contact-cardnumber-error" id="cardnumber" name="cardnumber">
+                    <div class="invalid-feedback" id="form-contact-cardnumber-error"></div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="form-group required">
+                    <label class="form-control-label" for="contact-expiration">
+                        <isprint value="${pdict.profileForm.customer.expiration.label}" encoding="htmlcontent" />
+                    </label>
+                    <input type="number" required class="form-control required"
+                        aria-describedby="form-contact-expiration-error" id="expiration" name="expiration">
+                    <div class="invalid-feedback" id="form-contact-expiration-error"></div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="form-group required">
+                    <label class="form-control-label" for="contact-securitycode">
+                        <isprint value="${pdict.profileForm.customer.securitycode.label}" encoding="htmlcontent" />
+                    </label>
+                    <input type="number" required class="form-control required"
+                        aria-describedby="form-contact-securitycode-error" id="securitycode" name="securitycode">
+                    <div class="invalid-feedback" id="form-contact-securitycode-error"></div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="form-group required">
+                    <label class="form-control-label" for="contact-email">
+                        <isprint value="${pdict.profileForm.customer.email.label}" encoding="htmlcontent" />
+                    </label>
+                    <input type="email" required class="form-control required"
+                        aria-describedby="form-contact-email-error" id="email" name="email">
+                    <div class="invalid-feedback" id="form-contact-email-error"></div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <input type="hidden" name="${pdict.csrf.tokenName}" value="${pdict.csrf.token}" />
+                <div class="row contact-us-payment">
+
+        <div class="col-sm-10">
+            <button type="submit" class="btn btn-block btn-primary">
+                ${Resource.msg('button.createaccount.registration', 'forms', null)}
+            </button>
+        </div>
+        <div class="col-sm-2">
+           <a href="#top-back" class="back-to-top" title="Back to top" aria-label="Back to top">
+                    <span class="fa-stack fa-lg" aria-hidden="true">
+                        <i class="fa fa-circle fa-inverse fa-stack-2x"></i>
+                        <i class="fa fa-arrow-up fa-stack-1x"></i>
+                    </span>
+                </a>
+        </div>
+        </div>
+    </form>
+    </div>
+    </div>
+</isdecorate>

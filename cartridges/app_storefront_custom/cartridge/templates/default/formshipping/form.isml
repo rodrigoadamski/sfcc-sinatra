@@ -1,0 +1,186 @@
+<isdecorate template="common/layout/page">
+    <isscript>
+        var assets = require('*/cartridge/scripts/assets.js');
+        assets.addJs('/js/contactUs.js');
+        assets.addCss('/css/contactUs.css');
+    </isscript>
+
+    <div class="hero slant-down contact-us-banner">
+        <h1 class="page-title">Shipping</h1>
+    </div>
+
+    <div class="container contact-us-landing-page">
+        <div class="row justify-content-center">
+            <div class="col-sm-8 col-md-8">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 style="text-align:center;">Shipping</h4>
+
+                        <form action="${pdict.actionUrl}" class="contact-us" method="POST" name="contact-us">
+
+
+                            <!--- contact us first name, last name --->
+                            <div class="row contact-us-name">
+                                <div class="col-sm-6">
+                                    <div class="form-group required">
+                                        <label class="form-control-label" for="contact-first-name">
+                                            ${Resource.msg('label.input.contact-us-first-name', 'contactUs', null)}
+                                        </label>
+                                        <input type="text" required class="form-control required" aria-describedby="form-contact-first-name-error" id="contact-first-name" name="contactFirstName">
+                                        <div class="invalid-feedback" id="form-contact-first-name-error"></div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group required">
+                                        <label class="form-control-label" for="contact-last-name">
+                                            ${Resource.msg('label.input.contact-us-last-name', 'contactUs', null)}
+                                        </label>
+                                        <input type="text" required class="form-control required" aria-describedby="form-contact-last-name-error" id="contact-last-name" name="contactLastName">
+                                        <div class="invalid-feedback" id="form-contact-last-name-error"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                                <!--- contact us address --->
+
+                            <div class="row contact-us-address">
+                                <div class="col-sm-12">
+                                    <div class="form-group required">
+                                        <label class="form-control-label" for="contact-address-line01">
+                                           ${Resource.msg('label.input.contact-us-addresLine01', 'contactUs', null)}
+                                        </label>
+                                        <input type="text" required class="form-control required" aria-describedby="form-contact-addresLine01-error" id="contact-addresLine01" name="contactaddresLine01">
+                                        <div class="invalid-feedback" id="form-contact-addresLine01-error"></div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="form-group required">
+                                        <label class="form-control-label" for="contact-addresLine02">
+                                            ${Resource.msg('label.input.contact-us-addresLine02', 'contactUs', null)}
+                                        </label>
+                                        <input type="text" required class="form-control required" aria-describedby="form-contact-addresLine02-error" id="contact-addresLine02" name="contactaddresLine02">
+                                        <div class="invalid-feedback" id="form-contact-addresLine02-error"></div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label class="form-control-label" for="contact-country">
+                                            ${Resource.msg('label.input.contact-us-country', 'contactUs', null)}
+                                        </label>
+                                        <select type="text" required class="form-control required" id="contact-country" name="contactcountry">
+                                            <option value="GI">
+                                                ${Resource.msg('label.input.contact-country-usa', 'contactUs', null)}
+                                            </option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label class="form-control-label" for="contact-state">
+                                            ${Resource.msg('label.input.contact-us-state', 'contactUs', null)}
+                                        </label>
+                                        <select type="text" required class="form-control required" id="contact-state" name="contactstate">
+                                            <option value="AL">
+                                                ${Resource.msg('label.input.contact-state-alabama', 'contactUs', null)}
+                                            </option>
+                                            <option value="NY">
+                                                ${Resource.msg('label.input.contact-state-ny', 'contactUs', null)}
+                                            </option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group required">
+                                        <label class="form-control-label" for="contact-postal">
+                                            ${Resource.msg('label.input.contact-us-postal', 'contactUs', null)}
+                                        </label>
+                                        <input type="text" required class="form-control required" aria-describedby="form-contact-postal-error" id="contact-postal" name="contactPostal">
+                                        <div class="invalid-feedback" id="form-contact-postal-error"></div>
+                                    </div>
+                                </div>
+                                 <div class="col-sm-6">
+                                    <div class="form-group required">
+                                        <label class="form-control-label" for="contact-phone">
+                                            ${Resource.msg('label.input.contact-us-phone', 'contactUs', null)}
+                                        </label>
+                                        <input type="text" required class="form-control required" aria-describedby="form-contact-phone-error" id="contact-phone" name="contactphone">
+                                        <div class="invalid-feedback" id="form-contact-phone-error"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--- contact us comment --->
+                            <div class="row contact-us-comment">
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label class="form-control-label" for="contact-comment">
+                                            ${Resource.msg('label.input.contact-us-comment', 'contactUs', null)}
+                                        </label>
+                                        <textarea class="form-control" id="contact-comment" name="contactComment" rows="4" maxlength="250"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <h4 style="text-align:center;">Payment</h4>
+                            <!--- contact us card payment --->
+                            <div class="row contact-us-payment">
+                                <div class="col-sm-6">
+                                    <div class="form-group required">
+                                        <label class="form-control-label" for="contact-cardnumber">
+                                            ${Resource.msg('label.input.contact-us-cardnumber', 'contactUs', null)}
+                                        </label>
+                                        <input type="number" required class="form-control required" aria-describedby="form-contact-cardnumber-error" id="contact-cardnumber" name="contactcardnumber">
+                                        <div class="invalid-feedback" id="form-contact-cardnumber-error"></div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group required">
+                                        <label class="form-control-label" for="contact-expiration">
+                                            ${Resource.msg('label.input.contact-us-expiration', 'contactUs', null)}
+                                        </label>
+                                        <input type="number" required class="form-control required" aria-describedby="form-contact-expiration-error" id="contact-expiration" name="contactexpiration">
+                                        <div class="invalid-feedback" id="form-contact-expiration-error"></div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group required">
+                                        <label class="form-control-label" for="contact-securitycode">
+                                            ${Resource.msg('label.input.contact-us-securitycode', 'contactUs', null)}
+                                        </label>
+                                        <input type="number" required class="form-control required" aria-describedby="form-contact-securitycode-error" id="contact-securitycode" name="contactsecuritycode">
+                                        <div class="invalid-feedback" id="form-contact-securitycode-error"></div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group required">
+                                        <label class="form-control-label" for="contact-email">
+                                            ${Resource.msg('label.input.contact-us-email', 'contactUs', null)}
+                                        </label>
+                                        <input type="email" required class="form-control required" aria-describedby="form-contact-email-error" id="contact-email" name="contactEmail">
+                                        <div class="invalid-feedback" id="form-contact-email-error"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                    <!--- contact us submit --->
+                            <div class="row contact-us-submnit">
+                                <div class="col-sm-10">
+                                <div class="form-group">
+                                        <button class="btn btn-block btn-primary subscribe-contact-us" type="submit" name="save" value="save">
+                                            ${Resource.msg('label.input.contact-us-save', 'contactUs', null)}
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col-sm-2">
+                                    <a class="back-to-top" title="Back to top" aria-label="Back to top">
+                                    <i class="fa fa-arrow-up fa-stack-1x"></i>
+                                 </span>
+                </a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</isdecorate>
