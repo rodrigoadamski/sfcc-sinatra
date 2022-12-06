@@ -1,0 +1,27 @@
+@forward "slick-carousel/slick/slick";
+@forward "slick-carousel/slick/slick-theme";
+
+.slider {
+  width: 100%;
+  margin: 100px auto;
+}
+
+
+.slick-prev, .slick-next {
+  background: #0a0a0a !important;
+}
+
+.slick-prev:hover, .slick-next:hover {
+  background: #4e0a0a !important;
+}
+
+
+.slick-slide img {
+  display: block;
+  margin: 0 auto;
+}
+
+.slick-dots li {
+  border-radius: 10px;
+  background: rgb(73, 72, 72);
+}
