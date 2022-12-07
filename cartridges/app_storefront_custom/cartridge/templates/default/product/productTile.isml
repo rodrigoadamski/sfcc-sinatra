@@ -1,5 +1,12 @@
+<isscript>
+        var assets = require('*/cartridge/scripts/assets.js');
+        assets.addCss('/css/badges/badge.css');
+        assets.addCss('/css/badge.css');
+    </isscript>
+
 <div class="product-tile">
     <!-- dwMarker="product" dwContentID="${product.uuid}" -->
+    <div class="badge-info-round"><p>${product.primaryCategory.name}</p></div>
     <isif condition="${pdict.display.swatches !== false}">
             <isinclude template="product/components/productTileSwatch" />
         </isif>
